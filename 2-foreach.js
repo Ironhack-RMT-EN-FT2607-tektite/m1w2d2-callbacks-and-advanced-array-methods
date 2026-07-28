@@ -13,11 +13,11 @@ let randomNumbers = [4,8,15,16,23,42]
 // } )
 
 //* the way the forEach method is built looks something like this:
-// Array.prototype.forEach = function(callback) {
-//   for (let i = 0; i < Array.length; i++) {
-//     callback(Array[i], i)
-//   }
-// }
+Array.prototype.forEach = function(callback) {
+  for (let i = 0; i < Array.length; i++) {
+    callback(Array[i], i)
+  }
+}
 
 for (let i = 0; i < randomNumbers.length; i++) {
   console.log(i, randomNumbers[i])
